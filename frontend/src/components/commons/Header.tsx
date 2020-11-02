@@ -1,6 +1,8 @@
 import React from "react";
 import { AppBar, IconButton, makeStyles, Toolbar, Typography } from "@material-ui/core";
 import MenuIcon from '@material-ui/icons/Menu';
+import { useHistory } from "react-router-dom";
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -23,12 +25,14 @@ const useStyles = makeStyles((theme) => ({
 
 const Header: React.FC = () => {
     const classes = useStyles();
+    const history = useHistory();
+    
     
     return (
         <div className={classes.root}>
             <AppBar position="static" className={classes.container}>
                 <Toolbar>
-                    <Typography variant="h4" className={classes.title}>
+                    <Typography variant="h4" onClick={() => history.push("/")} className={classes.title}>
                         Ame1pet
                     </Typography>
                     <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
