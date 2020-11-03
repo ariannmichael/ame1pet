@@ -3,6 +3,7 @@ class PetModel {
     name: string
     specie: string
     breed: string
+    sex: string
     photo: string
     age: string
     vaccinated: boolean
@@ -13,6 +14,7 @@ class PetModel {
         this.name = item.name;
         this.specie = item.specie;
         this.breed = item.breed;
+        this.sex = item.sex;
         this.photo = item.photo;
         this.age = item.age;
         this.vaccinated = item.vaccinated;

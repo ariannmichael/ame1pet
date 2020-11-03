@@ -7,6 +7,7 @@ const useStyles = makeStyles((theme: Theme) => ({
         margin: theme.spacing(2)
     },
     title: {
+        fontSize: '1.5rem',
         textAlign: 'center',
         fontFamily: '"Pacifico", cursive'
     },

@@ -20,3 +20,9 @@ export const postPet = async(body: PetModel) => {
 
     return axios.post(url, body);
 }
+
+export const removePet = async(id: number) => {
+    const url = baseURL + "pets/" + id;
+
+    return axios.delete(url);
+}
