@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 
 const useStyles = makeStyles((theme: Theme) => ({
     root: {
-        margin: theme.spacing(2)
+        margin: theme.spacing(4)
     },
     title: {
         fontSize: '1.5rem',
@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme: Theme) => ({
         fontFamily: '"Pacifico", cursive'
     },
     body: {
+        marginTop: '1.6rem',
         display: 'flex',
         justifyContent: 'center'
     },
@@ -33,7 +34,7 @@ const useStyles = makeStyles((theme: Theme) => ({
             fontSize: '1rem',
             width: '10rem',
             height: '3rem',
-            marginTop: '1rem',
+            marginTop: '1.6rem',
 
             "&:hover": {
                 backgroundColor: 'green',

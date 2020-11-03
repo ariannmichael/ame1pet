@@ -4,7 +4,7 @@ import CardsPet from "./CardsPet";
 
 const useStyles = makeStyles((theme: Theme) => ({
     root: {
-        margin: theme.spacing(2)
+        margin: theme.spacing(4)
     },
     title: {
         fontSize: '1.5rem',

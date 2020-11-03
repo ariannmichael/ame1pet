@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import CardDeck from 'react-bootstrap/CardDeck';
 import CardPet from "./CardPet";
 import { getAllPets } from "../../../api/api";
 import PetModel from "../../../models/PetModel";
@@ -28,13 +27,13 @@ const CardsPet: React.FC = () => {
     }, [])
 
     return (
-        <CardDeck className={classes.root}>
+        <div className={classes.root}>
             {
                 pets.map((element:PetModel, index:number) => (
                     <CardPet key={index} pet={element}/>
                 ))
             }
-        </CardDeck>
+        </div>
     );
 }
 

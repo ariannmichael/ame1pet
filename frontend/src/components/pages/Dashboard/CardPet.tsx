@@ -9,6 +9,7 @@ const useStyle = makeStyles({
         width: '18rem',
         height: '14rem',
         margin: '1rem',
+        borderRadius: '1rem',
         position: 'relative',
         "&:hover $description": {
             visibility: 'visible',
@@ -31,14 +32,17 @@ const useStyle = makeStyles({
         color: '#FFFF',
         visibility: 'hidden',
         opacity: 0,
+        width: 'inherit',
+        height: 'inherit',
 
-        "& h3": {
+        "& h5": {
+            marginTop: '1rem',
             marginLeft: '1rem'
         },
         "& button": {
             width: '12rem',
             marginLeft: '17%',
-            marginTop: '5%'
+            marginTop: '12%'
         }
     }
 });
@@ -55,9 +59,9 @@ const CardPet:React.FC<CardPetProps> = ({ pet }) => {
         <Card className={classes.root}>
             <Card.Img variant="top" src={pet.photo} className={classes.photo}/>
             <div className={classes.description}>
-                <h3>Nome: {pet.name}</h3>
-                <h3>Espécie: {pet.specie}</h3>
-                <h3>Raça: {pet.breed}</h3>
+                <h5>Nome: {pet.name}</h5>
+                <h5>Espécie: {pet.specie}</h5>
+                <h5>Raça: {pet.breed}</h5>
                 <Button onClick={() => history.push("/pet", {id: pet.id})} variant="contained" color="primary">
                     Saber Mais
                 </Button>
