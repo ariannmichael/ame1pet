@@ -97,7 +97,7 @@ const Pet:React.FC = () => {
                             <h2>Sexo: {pet.sex}</h2>
                             <h2>Idade: {pet.age}</h2>
                             <h2>Vacinado: {pet.vaccinated ? "Sim" : "Não"}</h2>
-                            <h2>Castrado: {pet.age ? "Sim" : "Não"}</h2>
+                            <h2>Castrado: {pet.castrated ? "Sim" : "Não"}</h2>
                             <Button onClick={() => handleAdoption(pet.id)} variant="contained">
                                 Adotar
                             </Button>
