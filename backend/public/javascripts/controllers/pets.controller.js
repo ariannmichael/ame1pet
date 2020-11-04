@@ -26,8 +26,8 @@ exports.getAllPets = async function(req, res) {
 
 exports.postPet = async function(req, res) {
     const newPet = req.body;
-
-    pets.push({id: ++lastIndex,newPet});
+    
+    pets.push({id: ++lastIndex,...newPet});
     res.status(200).json({ newPet })
 }
 
