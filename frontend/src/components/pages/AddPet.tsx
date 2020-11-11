@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme: Theme) => ({
         marginRight: theme.spacing(30),
         marginLeft: theme.spacing(30),
         borderRadius: '1rem',
-        backgroundColor: '#EBEBEB'
+        backgroundColor: 'var(--formColor)'
     },
     title: {
         padding: theme.spacing(4),

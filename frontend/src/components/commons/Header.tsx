@@ -3,6 +3,7 @@ import { AppBar, IconButton, makeStyles, Toolbar, Typography } from "@material-u
 import MenuIcon from '@material-ui/icons/Menu';
 import { useHistory } from "react-router-dom";
 import SideMenu from "./SideMenu";
+import ThemeSwitch from "./ThemeSwitch";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -10,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
       flexGrow: 1
     },
     container: {
-        backgroundColor: '#48DEFF'
+        backgroundColor: 'var(--headerColor)'
     },
     menuButton: {
       marginRight: theme.spacing(2),
@@ -36,6 +37,9 @@ const Header: React.FC = () => {
                     <Typography variant="h4" onClick={() => history.push("/")} className={classes.title}>
                         Ame1pet
                     </Typography>
+                    <div className="mr-4">
+                        <ThemeSwitch/>
+                    </div>
                     <IconButton edge="start" className={classes.menuButton} onClick={() => setShowMenu(true)} 
                         color="inherit" aria-label="menu">
                         <MenuIcon className={classes.menuIcon}/>

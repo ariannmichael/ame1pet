@@ -12,7 +12,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     title: {
         fontSize: '1.5rem',
         textAlign: 'center',
-        fontFamily: '"Pacifico", cursive'
+        fontFamily: '"Pacifico", cursive',
+        color: 'var(--textColor)',
     },
     body: {
         marginTop: '1.6rem',
@@ -26,6 +27,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
     description: {
         marginLeft: '1rem',
+        color: 'var(--textColor)',
 
         "& button": {
             backgroundColor: '#32D443',

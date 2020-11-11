@@ -5,14 +5,17 @@ import Router from './Router';
 import Header from "../src/components/commons/Header";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ThemeProvider from './providers/ThemeProvider';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Header/>
-      <Router/>
-      <ToastContainer autoClose={2500} position="top-right" />
-    </BrowserRouter>
+    <ThemeProvider>
+      <BrowserRouter>
+        <Header/>
+        <Router/>
+        <ToastContainer autoClose={2500} position="top-right" />
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 

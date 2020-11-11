@@ -9,6 +9,7 @@ const useStyle = makeStyles({
         width: '18rem',
         height: '14rem',
         margin: '1rem',
+        border: 'none',
         borderRadius: '1rem',
         position: 'relative',
         "&:hover $description": {

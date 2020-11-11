@@ -5,11 +5,23 @@ import PetsIcon from '@material-ui/icons/Pets';
 import AddIcon from '@material-ui/icons/Add';
 
 const useStyles = makeStyles({
+    root: {
+        "& .MuiDrawer-paper": {
+            backgroundColor: 'var(--background)',
+        },
+        "& span": {
+            color: 'var(--textColor)'
+        }
+    },
     listItemText: {
         marginRight: '2rem',
         "& span": {
             fontSize: '1.3rem',
         }
+    },
+    icons: {
+        marginRight: 10,
+        color: 'var(--textColor)'
     }
 });
 
@@ -33,20 +45,20 @@ const SideMenu:React.FC<SideMenuProps> = ({ open, onClose }) => {
     }
 
     return (
-        <Drawer anchor={'right'} open={showMenu} onClose={handleClose}>
+        <Drawer anchor={'right'} className={classes.root} open={showMenu} onClose={handleClose}>
             <List>
                 <Divider />
                 <ListItem button key={"Lista de Pets"}
                     onClick={() => history.push('/')}>
                         
-                    <PetsIcon style={{ marginRight: 10 }} />
+                    <PetsIcon className={classes.icons} />
                     <ListItemText className={classes.listItemText} primary={"Lista de Pets"} />
                 </ListItem>
                 <Divider />
                 <ListItem button key={"Adicionar Pet"}
                     onClick={() => history.push('/add')}>
                         
-                    <AddIcon style={{ marginRight: 10 }} />
+                    <AddIcon className={classes.icons} />
                     <ListItemText className={classes.listItemText} primary={"Adicionar Pet"} />
                 </ListItem>
                 <Divider />

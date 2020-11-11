@@ -9,7 +9,8 @@ const useStyles = makeStyles((theme: Theme) => ({
     title: {
         fontSize: '1.5rem',
         textAlign: 'center',
-        fontFamily: '"Pacifico", cursive'
+        fontFamily: '"Pacifico", cursive',
+        color: 'var(--textColor)'
     },
     cards: {
         margin: theme.spacing(5)
