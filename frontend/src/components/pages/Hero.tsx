@@ -30,16 +30,11 @@ const useStyles = makeStyles((theme: Theme) =>
         buttonContainer: {
             display: 'grid',
             "& button": {
-                backgroundColor: '#18BB28',
                 color: 'white',
                 height: '7vh',
                 fontSize: '1.5vw',
                 fontFamily: 'Rosario',
-                fontWeight: 600,
-
-                "&:hover": {
-                    backgroundColor: 'green'
-                }
+                fontWeight: 600
             }
         }
     })
@@ -54,7 +49,7 @@ const Hero:React.FC = () => {
             <div className={classes.textContainer}>
                 <h1>Seu amor vai vir correndo pra você.</h1> 
                 <div className={classes.buttonContainer}>
-                    <Button variant="contained" onClick={() => history.push("/dashboard")}>
+                    <Button variant="contained" color="primary" onClick={() => history.push("/dashboard")}>
                         Basta Chamar
                     </Button>
                 </div>
