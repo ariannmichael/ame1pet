@@ -21,7 +21,8 @@ const useStyles = makeStyles((theme) => ({
     },
     title: {
       flexGrow: 1,
-      fontFamily: '"Pacifico", cursive'
+      fontFamily: '"Pacifico", cursive',
+      cursor: 'pointer'
     },
 }));
 

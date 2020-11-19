@@ -49,7 +49,7 @@ const SideMenu:React.FC<SideMenuProps> = ({ open, onClose }) => {
             <List>
                 <Divider />
                 <ListItem button key={"Lista de Pets"}
-                    onClick={() => history.push('/')}>
+                    onClick={() => history.push('/dashboard')}>
                         
                     <PetsIcon className={classes.icons} />
                     <ListItemText className={classes.listItemText} primary={"Lista de Pets"} />
